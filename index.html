@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gowtham K - Data Analyst & ML Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+            <span>Loading</span>
+            <div class="loading-bar">
+                <div class="progress"></div>
+            </div>
+            <div class="percentage">0%</div>
+        </div>
+    </div>
+    
+    <!-- Game HUD Menu -->
+    <nav class="game-hud">
+        <div class="player-stats">
+            <div class="player-level">LVL <span id="level">85</span></div>
+            <div class="player-hp">
+                <div class="hp-bar">
+                    <div class="hp-fill"></div>
+                </div>
+                <span>XP: 85/100</span>
+            </div>
+        </div>
+        <ul class="menu-items">
+            <li data-section="home" class="active">HOME</li>
+            <li data-section="about">ABOUT</li>
+            <li data-section="skills">SKILLS</li>
+            <li data-section="projects">PROJECTS</li>
+            <li data-section="contact">CONTACT</li>
+        </ul>
+        <div class="game-controls">
+            <div class="sound-toggle">
+                <i class="fas fa-volume-up"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content Area -->
+    <main class="game-screen">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="glitch-container">
+                <h1 class="glitch-text" data-text="GOWTHAM K">GOWTHAM K</h1>
+                <p class="typing-text"></p>
+            </div>
+            <div class="cta-buttons">
+                <button class="btn-primary" data-section="about">START GAME</button>
+                <button class="btn-secondary" data-section="contact">CONTACT</button>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h2 class="section-title">ABOUT ME</h2>
+            <div class="about-grid">
+                <div class="about-avatar">
+                    <div class="avatar-frame">
+                        <img src="C:\Users\Gowtham K\Downloads\WhatsApp Image 2025-03-12 at 22.55.45(1).jpeg" alt="Profile Image">
+                    </div>
+                    <div class="player-card">
+                        <h3>GOWTHAM K</h3>
+                        <p>Data Analyst & ML Engineer</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-name">INT</span>
+                                <span class="stat-value">92</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">DEX</span>
+                                <span class="stat-value">85</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">WIS</span>
+                                <span class="stat-value">88</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-name">EXP</span>
+                                <span class="stat-value">4 YRS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p>Data Analyst and Machine Learning Engineer with expertise in Python, SQL, and data visualization. Demonstrated success in developing ML models and conducting data analysis projects. Proficient in cloud technologies and committed to delivering data-driven insights.</p>
+                    <p>B.Tech in Computer Science and Engineering from Reva University, Bangalore with specialization in Artificial Intelligence and Machine Learning (CGPA: 8.5/10).</p>
+                    <div class="achievement">
+                        <i class="fas fa-trophy"></i>
+                        <div>
+                            <h4>ACHIEVEMENT UNLOCKED</h4>
+                            <p>Google Cloud Certified - Associate Cloud Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">SKILL TREE</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>PROGRAMMING</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <h4>HTML</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 95%;"></div>
+                                    </div>
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <div class="skill-info">
+                                <h4>CSS</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 90%;"></div>
+                                    </div>
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 85%;"></div>
+                                    </div>
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 95%;"></div>
+                                    </div>
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <h4>SQL</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 80%;"></div>
+                                    </div>
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DATA SCIENCE</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                            <div class="skill-info">
+                                <h4>Machine Learning</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 90%;"></div>
+                                    </div>
+                                    <span>90%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="skill-info">
+                                <h4>Data Analysis</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 92%;"></div>
+                                    </div>
+                                    <span>92%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-chart-pie"></i></div>
+                            <div class="skill-info">
+                                <h4>Data Visualization</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 88%;"></div>
+                                    </div>
+                                    <span>88%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                            <div class="skill-info">
+                                <h4>Cloud Technologies</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 85%;"></div>
+                                    </div>
+                                    <span>85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">QUEST LOG</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Uber Data Analysis</h3>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Tableau</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p>Developed interactive dashboard analyzing 100,000+ ride records. Reduced data anomalies by 95% through advanced preprocessing techniques. Generated actionable insights on peak hours and pricing optimization.</p>
+                    </div>
+                    <div class="project-footer">
+                        <button class="btn-details">VIEW DETAILS</button>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Data Compression using Autoencoders</h3>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>Keras</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p>Built Hybrid convLSTM-RNN model achieving 90% compression ratio. Improved model performance by 40% through optimization techniques. Maintained 92% reconstruction accuracy while reducing storage requirements.</p>
+                    </div>
+                    <div class="project-footer">
+                        <button class="btn-details">VIEW DETAILS</button>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Symptom based Disease Prediction</h3>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>ML</span>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <p>Implemented ML classification model with 94% prediction accuracy. Automated data pipeline reducing manual processing time by 70%. Integrated system with web interface for real-time predictions.</p>
+                    </div>
+                    <div class="project-footer">
+                        <button class="btn-details">VIEW DETAILS</button>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <h2 class="section-title">CONTACT ME</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>gowthamkrissh24@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 7337639635</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <p>LinkedIn</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <p>GitHub</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button class="btn-primary">SEND MESSAGE</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Certifications & Achievements -->
+        <section id="achievements" class="section">
+            <h2 class="section-title">ACHIEVEMENTS</h2>
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Google Cloud Certified</h3>
+                        <p>Associate Cloud Engineer</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fab fa-ibm"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>IBM</h3>
+                        <p>Python for Data Science, AI and Development</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Microsoft & LinkedIn</h3>
+                        <p>Career Essentials for Generative AI</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Coursera</h3>
+                        <p>Mastering Data Analysis in MS Excel</p>
+                    </div>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>NCC Cadet</h3>
+                        <p>Grade A - Led team activities and organized community events</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Game Dialog Box -->
+    <div class="dialog-box">
+        <div class="dialog-content">
+            <div class="dialog-header">
+                <h3>New Quest Available!</h3>
+                <button class="dialog-close">&times;</button>
+            </div>
+            <div class="dialog-body">
+                <p>Would you like to learn more about my projects?</p>
+            </div>
+            <div class="dialog-footer">
+                <button class="btn-primary" data-section="projects">Accept</button>
+                <button class="btn-secondary dialog-close">Decline</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add this script to force bypass loading screen -->
+    <script>
+    window.addEventListener('load', function() {
+      console.log("Window loaded");
+      setTimeout(function() {
+        console.log("Attempting to bypass loading screen");
+        const loadingScreen = document.querySelector('.loading-screen');
+        if (loadingScreen) {
+          loadingScreen.classList.add('hidden');
+          console.log("Loading screen bypassed");
+        }
+      }, 2000);
+    });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
